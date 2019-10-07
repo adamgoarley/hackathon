@@ -1,0 +1,26 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamgoarley/hackathon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adamgoarley/hackathon/issues"
+  },
+  "homepage": "https://github.com/adamgoarley/hackathon#readme"
+}
