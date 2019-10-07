@@ -73,19 +73,69 @@ main {
 #burgerCon.slideToggle {
   display: block; }
 
-#bannerImage {
+#bannerImage img {
   width: 100%;
   height: 400px;
-  background-color: blue; }
+  background-color: blue;
+  margin-bottom: 50px; }
 
-#shopNow HELP ON THIS FML {
-  background-color: black;
-  height: 40px;
-  width: 80px;
+#shopNow {
+  background-color: #F16523;
+  height: 50px;
+  width: 145px;
   text-align: center;
-  border-radius: 8px; }
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 0px 0px 0px 20px;
+  font-size: 25px; }
 
 .circle img {
-  border-radius: px; }
+  border-radius: 100px; }
+
+.circle {
+  text-align: center; }
+
+.square1, .square2, .square3 {
+  display: block;
+  text-align: center; }
+
+.square1Image, .square2Image, .square3Image {
+  background-color: green;
+  width: 100%;
+  height: 300px; }
+
+.square1Text, .square2Text, .square3Text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center; }
+
+@media screen and (min-width: 640px) {
+  #infoCircles {
+    display: flex;
+    justify-content: space-evenly; }
+
+  .circle {
+    flex-direction: row; }
+
+  .square2 {
+    display: none; }
+
+  .square2Desktop {
+    display: contents; }
+
+  .square1, .square2Desktop, .square3 {
+    display: flex;
+    flex-direction: row; }
+
+  .square1Image, .square2Image, .square3Image {
+    background-color: green;
+    width: 50%;
+    height: 300px; }
+
+  .square1Text, .square2Text, .square3Text {
+    width: 50%;
+    height: 300px; } }
 
 /*# sourceMappingURL=main.css.map */
