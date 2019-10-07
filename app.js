@@ -1,5 +1,5 @@
-const express = require("express");
-const path = require("path");
+const express = require('express');
+const path = require('path');
 
 const app = express();
 
@@ -14,3 +14,39 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`app is running on ${port}`);
 })
+
+console.log("Java Script Linked Up");
+
+
+app.get('/', (req, res) => {
+	  console.log('Your on the homepage');
+	  res.sendFile(path.join(__dirname + '/views/index.html'));
+	})
+
+
+
+
+
+
+
+
+
+(function(){
+	"use strict";
+
+	console.log("fired");
+
+	var button = document.querySelector("#button");
+	var burgerCon = document.querySelector("#burgerCon");
+
+	function hamburgerMenu() {
+		burgerCon.classList.toggle("slideToggle");
+		button.classList.toggle("expanded");
+	}
+
+	button.addEventListener("click", hamburgerMenu, false);
+});
+
+app.listen(port, () => {
+	  console.log(`Server running at ${port}`);
+	});
